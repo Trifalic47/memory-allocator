@@ -2,9 +2,9 @@
 
 int main()
 {
-    init_break(); // Must call to initialize BREAK
-    int *numbers = (int*)mafoc(2001*sizeof(int));
-    numbers[2000] = 10;
+    /* TESTING: Allocating memory in heap for 5 uint8_t integers */
+    uint8_t *ages = (uint8_t*)mafoc(5*sizeof(uint8_t));
+
     return EXIT_SUCCESS;
 }
 
